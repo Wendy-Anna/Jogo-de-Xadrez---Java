@@ -92,11 +92,18 @@ public class UI {
 		System.out.println();
 		printPecasCapturadas(capturadas);
 		System.out.println("Turno: " +  partidaXadrez.getTurno());
-		System.out.println("Esperando o jogador: " +  partidaXadrez.getJogadorAtual());
-	
-		if(partidaXadrez.getXeque()) {
-			System.out.println("Xeque!");
+		if(!partidaXadrez.getXequeMate()) {
+			System.out.println("Esperando o jogador: " +  partidaXadrez.getJogadorAtual());
+			
+			if(partidaXadrez.getXeque()) {
+				System.out.println("Xeque!");
+			}
 		}
+		else {
+			System.out.println("XequeMate!");
+			System.out.println("Vencedor: " + partidaXadrez.getJogadorAtual());
+		}
+		
 	}
 	
 	public static void printTabuleiro(PecaXadrez[][] pecas, boolean [][] possiveisMovimentos) {
