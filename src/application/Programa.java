@@ -41,17 +41,17 @@ public class Programa {
 				}
 				
 			}
-			catch(XadrezException e) {
-				System.out.println(e.getMessage());
-				sc.nextLine();
-				
+			   catch(XadrezException e) {
+					System.out.println(e.getMessage());
+					sc.nextLine();
+					
+				}
+				catch(InputMismatchException e) {
+					System.out.println(e.getMessage());
+					sc.nextLine();
+					
+				} 
 			}
-			catch(InputMismatchException e) {
-				System.out.println(e.getMessage());
-				sc.nextLine();
-				
-			}
-		}
 		
 
 	}
