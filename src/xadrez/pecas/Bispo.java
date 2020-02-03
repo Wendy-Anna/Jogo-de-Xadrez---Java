@@ -9,7 +9,6 @@ public class Bispo extends PecaXadrez{
 
 	public Bispo(Tabuleiro tabuleiro, Cor cor) {
 		super(tabuleiro, cor);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
